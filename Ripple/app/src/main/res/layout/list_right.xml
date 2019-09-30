@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="desc"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorAccent"
+        android:layout_alignTop="@+id/member_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textColor="#7d7e81"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/profile_pic"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:layout_marginRight="10dp"
+        android:text="user Id" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1E74FF"
+        android:textSize="16sp"
+        android:background="@drawable/bg_bubble_white"
+        android:layout_below="@+id/member_name"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:layout_toStartOf="@+id/profile_pic"
+        android:text="Message"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/contact_typetime"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="#858788"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:layout_alignRight="@+id/status"
+        android:layout_alignEnd="@+id/status"
+        android:layout_below="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/SAA"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/member_name"
+        android:layout_toStartOf="@+id/member_name"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>

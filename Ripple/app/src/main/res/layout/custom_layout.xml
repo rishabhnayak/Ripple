@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/view27"
+        android:layout_below="@+id/view6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/QueryID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type Your Query"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:maxLines="10"
+            android:singleLine="true"
+            android:textColorHighlight="#FF1E74FF"
+            android:textColorHint="#FF1E74FF"
+            android:textColorLink="#FF1E74FF"
+            android:textColor="#FF1E74FF"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

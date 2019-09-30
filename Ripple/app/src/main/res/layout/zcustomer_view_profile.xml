@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="infracom.abcr.sarthamicrofinance.Order.Order"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:id="@+id/cc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="desc"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer ID"
+            android:id="@+id/cccc"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/bbbb"
+            android:layout_alignLeft="@+id/bbbb"
+            android:layout_alignStart="@+id/bbbb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:id="@+id/bbbb"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="right"
+            android:layout_alignTop="@+id/profile_pic11"
+            android:layout_toRightOf="@+id/profile_pic11"
+            android:layout_toEndOf="@+id/profile_pic11"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

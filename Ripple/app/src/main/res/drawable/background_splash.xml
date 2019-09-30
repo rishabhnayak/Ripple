@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Googlish splash screen -->
+
+<layer-list
+    android:opacity="opaque"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/translucent" />
+
+    <item android:bottom="@dimen/launchscreens_iven_icon_bottom">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_launcher" />
+    </item>
+
+    <item android:bottom="@dimen/launchscreens_iven_logo_bottom">
+        <bitmap
+            android:gravity="bottom|center"
+            android:src="@drawable/fname"
+            android:tint="@color/black"
+            android:autoMirrored="true"/>
+    </item>
+</layer-list>

@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+
+
+                <ScrollView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView" >
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:src="@drawable/ic_launcher"
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10px"
+                                android:layout_marginBottom="20dip"/>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                app:cardElevation="5dp"
+                                app:cardCornerRadius="4dp"
+                                app:cardBackgroundColor="@color/white"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp">
+<!--                                        <android.support.design.widget.TextInputLayout-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content">-->
+
+                                            <AutoCompleteTextView
+                                                android:id="@+id/txtName"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="User ID"
+                                                android:text=""
+                                                android:inputType="textEmailAddress"
+                                                android:singleLine="true" />
+
+<!--                                        </android.support.design.widget.TextInputLayout>-->
+                                        <EditText
+                                            android:id="@+id/txtEmail"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text=""
+                                            android:inputType="textPassword"
+                                            android:singleLine="true" />
+                                    </LinearLayout>
+
+
+                                    <CheckBox
+
+                                        android:id="@+id/cb_show_password"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Show Password"
+                                        android:nextFocusDown="@+id/btnRegister"
+
+                                        android:layout_margin="5dp" />
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="Login"
+                                        android:textColor="#ffffff"
+                                        android:background="@color/colorAccent"
+                                        android:layout_marginTop="20dp"
+                                        android:textSize="20dp"
+                                        android:id="@+id/btnRegister"
+                                        android:layout_margin="5dp" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+
+                </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="Sartha Micro Finance Foundation"/>
+    </LinearLayout>
+
+</LinearLayout>

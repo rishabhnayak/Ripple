@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgIcon12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp" />
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dipen Patel"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/imgIcon12"
+        android:layout_alignLeft="@+id/phoneno_textview"
+        android:layout_alignStart="@+id/phoneno_textview" />
+
+    <TextView
+        android:id="@+id/phoneno_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91-XXXXXXXXXX"
+        android:layout_below="@+id/name_textview"
+        android:layout_toRightOf="@+id/imgIcon12"
+        android:layout_toEndOf="@+id/imgIcon12" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/countnum"
+        android:textColor="#a9143c"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/phoneno_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkAll"
+        android:checked="false"
+        android:enabled="false"
+        android:layout_above="@+id/countnum"
+        android:layout_alignRight="@+id/countnum"
+        android:layout_alignEnd="@+id/countnum" />
+
+</RelativeLayout>

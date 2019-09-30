@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#ffffff"
+    tools:context="infracom.abcr.sarthamicrofinance.Profile.Customer_Launch">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/TaskM2441"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            fancy:fb_borderColor="#b34645"
+            fancy:fb_borderWidth="4dp"
+
+            fancy:fb_fontIconResource="@string/icon_cancel"
+            fancy:fb_defaultColor="#00ffffff"
+            fancy:fb_focusColor="#eaeaea"
+            fancy:fb_iconPosition="top"
+            fancy:fb_textColor="#b34645"
+
+            fancy:fb_fontIconSize="15dp"
+            fancy:fb_radius="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/Taskmax"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            fancy:fb_borderColor="#248f13"
+            fancy:fb_borderWidth="4dp"
+
+            fancy:fb_fontIconResource="@string/icon_min"
+            fancy:fb_defaultColor="#00ffffff"
+            fancy:fb_focusColor="#eaeaea"
+            fancy:fb_iconPosition="top"
+            fancy:fb_textColor="#248f13"
+
+            fancy:fb_fontIconSize="15dp"
+            fancy:fb_radius="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/TaskM2441"
+            android:layout_toStartOf="@+id/TaskM2441"
+            android:layout_margin="5dp" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/Taskmin"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            fancy:fb_borderColor="#1e74ff"
+            fancy:fb_borderWidth="4dp"
+
+            fancy:fb_fontIconResource="@string/icon_max"
+            fancy:fb_defaultColor="#00ffffff"
+            fancy:fb_focusColor="#eaeaea"
+            fancy:fb_iconPosition="top"
+            fancy:fb_textColor="#1e74ff"
+
+            fancy:fb_fontIconSize="15dp"
+            fancy:fb_radius="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/Taskmax"
+            android:layout_toStartOf="@+id/Taskmax"
+            android:layout_margin="5dp" />
+
+        <infracom.abcr.sarthamicrofinance.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:v_styleId="@array/text_title"
+            android:text="Sartha MicroFinance"
+            android:id="@+id/view8"
+            android:layout_alignBottom="@+id/TaskM2441"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/Taskmin"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/Taskmin" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/linearLayout5"
+            android:layout_below="@+id/scrollView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <infracom.abcr.sarthamicrofinance.material.widget.Button
+                android:id="@+id/sheet_bt_match"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="0.4"
+                android:text="Max"
+                android:background="@null"
+                app:v_styleId="@array/button_raise"
+                android:layout_marginLeft="15dp" />
+
+            <infracom.abcr.sarthamicrofinance.material.widget.TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view9"
+                android:layout_weight="0.4" />
+
+            <infracom.abcr.sarthamicrofinance.material.widget.Button
+                android:id="@+id/sheet_bt_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="0.4"
+                android:text="Min"
+                android:background="@null"
+                app:v_styleId="@array/button_raise"
+                android:layout_marginRight="15dp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/scrollView5"
+            android:layout_below="@+id/view8">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#01757f">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/imageView"
+                        android:layout_below="@+id/Taskmax"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/a1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:text="Brief: This guide shows you how to dual boot Linux Mint with Windows with legacy BIOS system. If you are not sure, read this to know if you have BIOS or UEFI system.  Last week I switched from Ubuntu to Linux Mint. For the sake of experimenting, I have been switching between Linux distributions quite frequently in recent times. I always dual boot Linux with Windows. As I leaned more towards Linux, I started using Windows less and less. In fact, now I hardly use it. But I just kept it as it is sort of back up if I screw up my system while playing with Linux.  Dual booting Linux with Windows is always suggestible for the beginners. And in this article, I’ll show you how to install Linux Mint 17 in dual boot with Windows. Once you have installed it, you can also check out things to do after installing Linux Mint 16.  Before we proceed to see the procedure to dual boot Linux Mint 16 with Windows, let me give you some details.  First, I had Windows 7 installed with 3 partitions on it. Later I installed Linux on it in dual boot mode. I changed the partition and kept around 100 GB of total 320 GB for Linux installation. In the course of time, I upgraded to Windows 8 and subsequently to Windows 8.1. I never had to face the problem of Windows 8’s secure boot thingy. It is just to clarify that this process does not show you how to deal with UEFI.  If your computer came with Windows 8 pre-installed, the process to install Linux in dual boot is slightly different. For Windows 8 pre-installed system with UEFI, follow this tutorial which is written to dual boot Ubuntu with Windows 8 UEFI. Though written for Ubuntu, it is applicable for Linux Mint as well."
+                        android:id="@+id/textView24"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@+id/view8"
+                        android:layout_alignRight="@+id/TaskM2441"
+                        android:layout_alignEnd="@+id/TaskM2441"
+                        android:layout_margin="10dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <!--
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/TaskM"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                fancy:fb_borderColor="#1e74ff"
+                fancy:fb_borderWidth="2dp"
+
+                fancy:fb_fontIconResource="@string/icon_Veti"
+                fancy:fb_defaultColor="#00ffffff"
+                fancy:fb_focusColor="#ffffff"
+                fancy:fb_iconPosition="top"
+                fancy:fb_text="Verify"
+                fancy:fb_textColor="#1e74ff"
+
+                fancy:fb_fontIconSize="50dp"
+                fancy:fb_radius="3dp"
+                android:layout_below="@+id/backLM"
+                android:layout_centerHorizontal="true" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/Ta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="1dp"
+                fancy:fb_borderColor="#1e74ff"
+                fancy:fb_borderWidth="2dp"
+
+                fancy:fb_fontIconResource="@string/icon_Veti"
+                fancy:fb_defaultColor="#00ffffff"
+                fancy:fb_focusColor="#ffffff"
+                fancy:fb_iconPosition="top"
+                fancy:fb_textColor="#1e74ff"
+
+                fancy:fb_fontIconSize="25dp"
+                fancy:fb_radius="50dp"
+                android:layout_margin="5dp" />
+
+            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backLM"
+                app:fab_iconSrc="@drawable/ic_person_black_24dp"
+                app:v_styleId="@array/fab_iconBig"
+                app:fab_elevation="0.001dp"
+                android:onClick="backokLLL"
+                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                android:layout_toRightOf="@+id/TaskM"
+                android:layout_toEndOf="@+id/TaskM" />
+
+            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backMM"
+                app:fab_iconSrc="@drawable/ic_mail_outline_black_24dp"
+                app:v_styleId="@array/fab_iconBig"
+                app:fab_elevation="0.001dp"
+                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                android:clickable="true"
+                android:onClick="showMesaage"
+                android:layout_alignTop="@+id/TaskM"
+                android:layout_toLeftOf="@+id/TaskM"
+                android:layout_toStartOf="@+id/TaskM" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/TaskM244"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="1dp"
+                fancy:fb_borderColor="#1e74ff"
+                fancy:fb_borderWidth="2dp"
+
+                fancy:fb_fontIconResource="@string/icon_up"
+                fancy:fb_defaultColor="#00ffffff"
+                fancy:fb_focusColor="#ffffff"
+                fancy:fb_iconPosition="top"
+                fancy:fb_textColor="#1e74ff"
+
+                fancy:fb_fontIconSize="15dp"
+                fancy:fb_radius="50dp"
+                android:layout_alignBottom="@+id/TaskM"
+                android:layout_toRightOf="@+id/backLM"
+                android:layout_toEndOf="@+id/backLM" />
+
+        </RelativeLayout>
+    </ScrollView>
+-->
+
+</LinearLayout>

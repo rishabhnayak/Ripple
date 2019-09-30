@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="infracom.abcr.sarthamicrofinance.Order.Task_Process"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/viewh7"
+                    android:layout_alignParentRight="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Customer Details"
+                    android:id="@+id/cccc"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FF1E74FF" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Loan Amount  "
+                    android:id="@+id/textViewNameID"
+                    android:layout_below="@+id/textViewOrder"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/textViewOrder"
+                    android:layout_below="@+id/viewh7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameCusto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/view2"
+                    android:layout_below="@+id/view"
+                    android:layout_alignParentLeft="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameFather"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Father's Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/view3"
+                    android:layout_below="@+id/view2"
+                    android:layout_alignParentLeft="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/view4"
+                    android:layout_below="@+id/view3"
+                    android:layout_alignParentLeft="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view5"
+                    android:layout_below="@+id/view4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view6"
+                    android:layout_below="@+id/view5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/PinZip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ZIP"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#FF1E74FF"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view27"
+                    android:layout_below="@+id/view6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNameEmailP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view233"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/view27"
+                    android:layout_alignParentLeft="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtNamePANP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PAN Number"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHighlight="#FF1E74FF"
+                        android:textColorHint="#FF1E74FF"
+                        android:textColorLink="#FF1E74FF"
+                        android:textColor="#FF1E74FF"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/view233"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayout7">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/relativeLayout7"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Bank Account Details"
+                                    android:id="@+id/textView36"
+                                    android:layout_marginTop="5dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/viewh2s7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Name"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vieddw2ss7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankBranchName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Branch Name"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vkkiew2ss7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankACC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Account Number"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vkkiew2slls7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/Bankifsc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="IFSC Code"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|right"
+                                android:layout_marginBottom="4dp"
+                                android:id="@+id/viejw7"
+                                android:layout_alignParentRight="false">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="#b9ffffff">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Photo"
+                                        android:id="@+id/textView2"
+                                        android:textColor="#FF1E74FF"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_toRightOf="@+id/imageViewP"
+                                        android:gravity="right"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="100dp"
+                                        android:id="@+id/imageViewP1"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageButtonP"
+                                        app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                        app:v_styleId="@array/fab_icon"
+                                        app:fab_elevation="0.001dp"
+                                        android:onClick="backokLLL"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignRight="@+id/textView2"
+                                        android:layout_alignEnd="@+id/textView2"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="5dp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|right"
+                                android:layout_marginBottom="4dp"
+                                android:id="@+id/vniew7"
+                                android:layout_alignParentRight="false">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="#b9ffffff">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Aadhar Card"
+                                        android:id="@+id/textView9"
+                                        android:textColor="#FF1E74FF"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_toRightOf="@+id/imageViewA"
+                                        android:gravity="right"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="100dp"
+                                        android:id="@+id/imageViewA1"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="50dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageButtonA"
+                                        app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                        app:v_styleId="@array/fab_icon"
+                                        app:fab_elevation="0.001dp"
+                                        android:onClick="backokLLL"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+</android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|right"
+                                android:layout_marginBottom="4dp"
+                                android:id="@+id/uview7"
+                                android:layout_alignParentRight="false">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="#b9ffffff">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Pan Card"
+                                        android:id="@+id/textView76"
+                                        android:textColor="#FF1E74FF"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="right"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="100dp"
+                                        android:id="@+id/imageViewD1"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="50dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageButtonD"
+                                        app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                        app:v_styleId="@array/fab_icon"
+                                        app:fab_elevation="0.001dp"
+                                        android:onClick="backokLLL"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+</android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|right"
+                                android:layout_marginBottom="4dp"
+                                android:id="@+id/view7"
+                                android:layout_alignParentRight="false">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="#b9ffffff">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Address Prof"
+                                        android:id="@+id/textView27"
+                                        android:textColor="#FF1E74FF"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="right"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_toRightOf="@+id/imageViewV"
+                                        android:layout_toEndOf="@+id/imageViewV"
+                                        android:layout_below="@+id/imageButtonV" />
+
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="100dp"
+                                        android:id="@+id/imageViewV1"
+
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="50dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageButtonV"
+                                        app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                        app:v_styleId="@array/fab_icon"
+                                        app:fab_elevation="0.001dp"
+                                        android:onClick="backokLLL"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cancel"
+                                    android:id="@+id/cancel"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:onClick="backok" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Update"
+                                    android:id="@+id/submit"
+                                    android:textColor="@color/black"
+                                    android:background="@color/colorAccent"
+                                    android:layout_gravity="right"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:onClick="Submit" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout2"
+                    android:layout_below="@+id/textViewNameID"
+                    android:layout_alignLeft="@+id/textViewOrder"
+                    android:layout_alignStart="@+id/textViewOrder">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Product Name"
+                            android:id="@+id/textView11"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/Product_Name"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView11"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Product Price"
+                            android:id="@+id/textView13"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Product Price"
+                            android:id="@+id/Product_Price"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView13"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Loan Amount(LTV Applied)"
+                            android:id="@+id/textView15"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/Loan_Amount"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView15"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Loan Amount(LTV Policy)"
+                            android:id="@+id/textView67"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="LTVP"
+                            android:id="@+id/LTVP"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView67"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Percent Rate(ROI Applied)"
+                            android:id="@+id/textView17"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Percenr_Rate"
+                            android:id="@+id/Percenr_Rate"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView17"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Percent Rate(ROI Policy)"
+                            android:id="@+id/textView69"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Percenr_Rate"
+                            android:id="@+id/ROIP"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView69"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Tuner"
+                            android:id="@+id/textView19"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/Ptuner_y"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView19"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="EMI"
+                            android:id="@+id/textView21"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/textViewPemi"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView21"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Frequency"
+                            android:id="@+id/Frequencysdsd"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:onClick="queryDo"
+                            android:clickable="true"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/Frequency"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/Frequencysdsd"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Scheme Type"
+                            android:id="@+id/ss"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/SchemeType"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/ss"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Advance EMI"
+                            android:id="@+id/AdvanceEMIzz"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/AdvanceEMI"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/AdvanceEMI"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Down Payment"
+                            android:id="@+id/zx"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/DownPayment"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/zx"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Disbursement"
+                            android:id="@+id/Disbursementzzzz"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/Disbursement"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/Disbursement"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FF1E74FF" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Total"
+                            android:id="@+id/textView23"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toLeftOf="@+id/textViewNameID"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignLeft="@+id/textViewOrder"
+                            android:layout_alignStart="@+id/textViewOrder"
+                            android:layout_weight="1.07"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/textViewPtotal"
+                            android:layout_below="@+id/textViewNameID"
+                            android:layout_toRightOf="@+id/textView23"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+</RelativeLayout>

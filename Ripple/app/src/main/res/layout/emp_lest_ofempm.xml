@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fhgk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#000000ff"
+    android:gravity="center_vertical|center_horizontal">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignParentRight="false"
+        android:background="#000000ff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:background="#00ffffff">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessB"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    android:onClick="manager"
+                    fancy:fb_fontIconResource="&#xf022;"
+                    fancy:fb_defaultColor="#b869da"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_text="List OF Manager"
+                    fancy:fb_textColor="#ffffff"
+
+                    fancy:fb_fontIconSize="50dp"
+                    fancy:fb_radius="100dp"
+                    android:layout_margin="10dp" />
+
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessE"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    fancy:fb_fontIconResource="&#xf022;"
+                    fancy:fb_defaultColor="#85ac10"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_text="List OF Sales Person"
+                    fancy:fb_textColor="#ffffff"
+                    android:onClick="sales"
+                    fancy:fb_fontIconSize="50dp"
+                    fancy:fb_radius="100dp"
+                    android:layout_margin="10dp" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/dealer"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    fancy:fb_fontIconResource="&#xf022;"
+                    fancy:fb_defaultColor="#10a9ac"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_text="List OF Dealer"
+                    fancy:fb_textColor="#ffffff"
+                    android:onClick="dealer"
+                    fancy:fb_fontIconSize="50dp"
+                    fancy:fb_radius="100dp"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessT"
+
+                    fancy:fb_fontIconSize="40dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    fancy:fb_defaultColor="#c68804"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_fontIconResource="&#xf022;"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="100dp"
+                    fancy:fb_text="Collection Summery"
+                    fancy:fb_textColor="#FFFFFF"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

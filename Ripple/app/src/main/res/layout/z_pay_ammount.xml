@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="desc"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer ID"
+            android:id="@+id/cccc"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/bbbb"
+            android:layout_alignLeft="@+id/bbbb"
+            android:layout_alignStart="@+id/bbbb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:id="@+id/bbbb"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="right"
+            android:layout_alignTop="@+id/profile_pic11"
+            android:layout_toRightOf="@+id/profile_pic11"
+            android:layout_toEndOf="@+id/profile_pic11"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/view279"
+        android:layout_below="@+id/cc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/payA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Pay Amount"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:maxLines="10"
+            android:singleLine="true"
+            android:textColorHighlight="#FF1E74FF"
+            android:textColorHint="#FF1E74FF"
+            android:textColorLink="#FF1E74FF"
+            android:textColor="#FF1E74FF"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/view27"
+        android:layout_below="@+id/view279"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/QueryID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type Your Message"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:maxLines="10"
+            android:singleLine="true"
+            android:textColorHighlight="#FF1E74FF"
+            android:textColorHint="#FF1E74FF"
+            android:textColorLink="#FF1E74FF"
+            android:textColor="#FF1E74FF"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

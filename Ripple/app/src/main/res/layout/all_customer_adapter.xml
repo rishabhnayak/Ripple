@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="desc"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorAccent"
+                    android:layout_margin="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/member_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:textColor="#FF1E74FF"
+                        android:textSize="12dp"
+                        android:layout_alignTop="@+id/profile_pic"
+                        android:layout_toLeftOf="@+id/imageView26"
+                        android:layout_alignLeft="@+id/status"
+                        android:layout_alignStart="@+id/status"
+                        android:text="Name" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF1E74FF"
+                        android:textSize="12dp"
+                        android:layout_toLeftOf="@+id/imageView26"
+                        android:layout_below="@+id/member_name"
+                        android:layout_toRightOf="@+id/Contact"
+                        android:layout_toEndOf="@+id/Contact"
+                        android:text="ID" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:id="@+id/Depart"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/contact_typetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#32ad02"
+                    android:text="Depart"
+                    android:layout_alignTop="@+id/Depart"
+                    android:layout_toRightOf="@+id/Contact"
+                    android:layout_toEndOf="@+id/Contact"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact : "
+                    android:id="@+id/Contact"
+                    android:layout_below="@+id/Depart"
+                    android:layout_alignLeft="@+id/Depart"
+                    android:layout_alignStart="@+id/Depart"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:id="@+id/Mobile"
+                    android:layout_alignTop="@+id/Contact"
+                    android:layout_toRightOf="@+id/Contact"
+                    android:layout_toEndOf="@+id/Contact"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address : "
+                    android:id="@+id/Address"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textIsSelectable="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:id="@+id/Address23"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product : "
+                    android:id="@+id/ProductD"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product"
+                    android:id="@+id/Productid"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product Price : "
+                    android:id="@+id/Price"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:id="@+id/Pricei"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Amount : "
+                    android:id="@+id/loan"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="amo"
+                    android:id="@+id/Loan_Amount"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme : "
+                    android:id="@+id/sch"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cs"
+                    android:id="@+id/scheme"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="EMI : "
+                    android:id="@+id/emi"
+                    android:layout_below="@+id/Contact"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="em"
+                    android:id="@+id/Emi"
+                    android:layout_alignTop="@+id/Address"
+                    android:layout_alignLeft="@+id/Mobile"
+                    android:layout_alignStart="@+id/Mobile"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

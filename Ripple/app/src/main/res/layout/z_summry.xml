@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="8dp"
+    android:background="#ffffff"
+    android:paddingRight="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="desc"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorAccent"
+        android:layout_alignBottom="@+id/contact_typetime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_below="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="name"
+        android:layout_alignRight="@+id/profile_pic"
+        android:layout_alignEnd="@+id/profile_pic"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:textColor="#FF1E74FF"
+        android:textSize="16sp"
+        android:text="ID"
+        android:layout_below="@+id/depart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/depart"
+        android:layout_alignEnd="@+id/depart"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/contact_typetime"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="Message"
+        android:background="@drawable/in_message_bg"
+        android:layout_below="@+id/member_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:layout_toStartOf="@+id/profile_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depart"
+        android:id="@+id/depart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toStartOf="@+id/progress_pv_circular_inout_colors1"
+        android:layout_alignRight="@+id/member_name"
+        android:layout_alignEnd="@+id/member_name" />
+
+
+    <infracom.abcr.sarthamicrofinance.material.widget.ProgressView
+        android:id="@+id/progress_pv_circular_inout_colors1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        app:v_styleId="@array/pv_circular_colors"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

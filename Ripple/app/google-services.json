@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1070609018768",
+    "firebase_url": "https://sarthamicrofinance.firebaseio.com",
+    "project_id": "sarthamicrofinance",
+    "storage_bucket": "sarthamicrofinance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070609018768:android:2109aeacd4bf0e97",
+        "android_client_info": {
+          "package_name": "infracom.abcr.sarthamicrofinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070609018768-jvv39brsglab5fpb615ikfacrc92rd3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "infracom.abcr.sarthamicrofinance",
+            "certificate_hash": "018EAA821FC54FD41FA1F813A4FD96D1E4B23A3A"
+          }
+        },
+        {
+          "client_id": "1070609018768-opgqf7vqrdfp2vn5cdo5he63cvd6m2t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApLr66DinMivWwd7-iyTBzB-KcEevI-aY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070609018768-opgqf7vqrdfp2vn5cdo5he63cvd6m2t0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="infracom.abcr.sarthamicrofinance.AssignEMP.Panalty_Count">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView17"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:background="#a9c691">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imageViewC"
+                        android:layout_below="@+id/viewh7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="5dp" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view5"
+                        android:layout_below="@+id/linearLayout15"
+                        android:layout_toEndOf="@+id/imageViewC"
+                        android:layout_toRightOf="@+id/imageViewC"
+                        android:layout_marginTop="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCusto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Customer ID"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view99"
+                        android:layout_below="@+id/view5"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCusto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Customer Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#bf96cb">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imageViewE"
+                        android:layout_below="@+id/viewh7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view96"
+                        android:layout_below="@+id/linearLayout15"
+                        android:layout_toEndOf="@+id/imageViewE"
+                        android:layout_toRightOf="@+id/imageViewE"
+                        android:layout_marginTop="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCusto43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dealer ID"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view9"
+                        android:layout_below="@+id/view96"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCusto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dealer Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9dd2d8"
+                    android:layout_alignTop="@+id/scrollView17"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="date"
+                                android:id="@+id/datee"
+                                android:layout_gravity="center_horizontal" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_margin="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="EMI"
+                                    android:id="@+id/textView88"
+                                    android:layout_margin="10dp"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="AMOUNT"
+                                    android:id="@+id/emi"
+                                    android:layout_margin="10dp"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_margin="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Panalty 2%/Day "
+                                android:id="@+id/textView84"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="AMOUNT"
+                                android:id="@+id/panalty"
+                                android:layout_margin="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:gravity="right"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="CHARGES"
+                                android:id="@+id/textView64"
+                                android:layout_margin="10dp" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/view9t"
+                                android:layout_below="@+id/view96"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_weight="0.10">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/charge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="AMOUNT"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColorHighlight="#FF1E74FF"
+                                    android:textColorHint="#FF1E74FF"
+                                    android:textColorLink="#FF1E74FF"
+                                    android:textColor="#FF1E74FF"
+                                    android:textSize="18dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#2c4967">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_margin="10dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="TOTAL"
+                                    android:id="@+id/textView86"
+                                    android:layout_margin="10dp"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="AMOUNT"
+                                    android:id="@+id/total"
+                                    android:layout_margin="10dp"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ASSIGN"
+                            android:id="@+id/button6"
+                            android:layout_gravity="right"
+                            android:layout_margin="10dp"
+                            android:onClick="assign" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textPoster"
+        android:hint="Search by Name and ID "
+        android:inputType="textVisiblePassword"
+        android:textColor="@color/colorAccent"
+        android:layout_toLeftOf="@+id/TaskLoanDetails"
+        android:layout_toStartOf="@+id/TaskLoanDetails"
+        android:layout_margin="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewtotal"
+        android:layout_alignRight="@+id/textViewintent"
+        android:layout_alignEnd="@+id/textViewintent"
+        android:layout_below="@+id/inputSearch"
+        android:theme="@android:style/Widget.AbsListView"
+        android:cacheColorHint="@color/white"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputSearch"
+        android:hint="Search"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/TaskLoanDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/TaskLoanDetails"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="1dp"
+        fancy:fb_borderColor="#c27203"
+        fancy:fb_borderWidth="3dp"
+android:onClick="reload"
+        fancy:fb_fontIconResource="&#xf021;"
+        fancy:fb_defaultColor="#00ffffff"
+        fancy:fb_focusColor="#ffffff"
+        fancy:fb_iconPosition="top"
+        fancy:fb_textColor="#c27203"
+
+        fancy:fb_fontIconSize="22dp"
+        fancy:fb_radius="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp" />
+
+</RelativeLayout>

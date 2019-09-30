@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="infracom.abcr.sarthamicrofinance.CATEGORIES.Sartha_Sanchar_Product">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/textPoster"
+    android:hint="Search products.."
+    android:inputType="textVisiblePassword"
+    android:text="Select Product"
+    android:textColor="@color/colorAccent" />
+
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/listViewtotal"
+    android:layout_alignRight="@+id/textViewintent"
+    android:layout_alignEnd="@+id/textViewintent"
+    android:layout_below="@+id/inputSearch"
+    android:theme="@android:style/Widget.AbsListView"
+    android:cacheColorHint="@color/white"/>
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/inputSearch"
+    android:hint="Search"
+    android:layout_below="@+id/textPoster"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/colorAccent"
+    android:textColorHint="@color/colorAccent" />
+
+</RelativeLayout>

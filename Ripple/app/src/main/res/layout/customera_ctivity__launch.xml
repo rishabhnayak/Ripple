@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="infracom.abcr.sarthamicrofinance.Profile.Customer_Launch"
+    android:background="@drawable/wall1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="desc"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/white"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Details "
+                android:id="@+id/textView29"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TaskCustomerDe"
+                    app:fab_iconSrc="@drawable/notification"
+                    app:v_styleId="@array/fab_iconBig"
+                    app:fab_elevation="0.001dp"
+                    app:fab_animDuration="@android:integer/config_shortAnimTime"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="5dp" />
+
+                <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboute"
+                    app:fab_iconSrc="@drawable/about"
+                    app:v_styleId="@array/fab_iconBig"
+                    app:fab_elevation="0.001dp"
+                    app:fab_animDuration="@android:integer/config_shortAnimTime"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:onClick="aboute"
+                    android:layout_margin="5dp" />
+
+                <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sharee"
+                    app:fab_iconSrc="@drawable/share"
+                    app:v_styleId="@array/fab_iconBig"
+                    app:fab_elevation="0.001dp"
+                    app:fab_animDuration="@android:integer/config_shortAnimTime"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:onClick="sharee"
+                    android:layout_margin="5dp" />
+
+                <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backM"
+                    app:fab_iconSrc="@drawable/logout_1"
+                    app:v_styleId="@array/fab_iconBig"
+                    app:fab_elevation="0.001dp"
+                    app:fab_animDuration="@android:integer/config_shortAnimTime"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:onClick="logout"
+                    android:layout_margin="5dp" />
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=""
+                    android:id="@+id/notifi"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_toRightOf="@+id/textViewM"
+                    android:layout_toEndOf="@+id/textViewM" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="false"
+                android:id="@+id/linearLayoutM"
+                android:weightSum="1">
+
+
+                <!--
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            android:id="@+id/empP"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="1dp"
+                            fancy:fb_borderColor="#1e74ff"
+                            fancy:fb_borderWidth="2dp"
+                    android:onClick="backokLLL"
+                            fancy:fb_fontIconResource="@string/icon_circle"
+                            fancy:fb_defaultColor="#00ffffff"
+                            fancy:fb_focusColor="#dce9ff"
+                            fancy:fb_iconPosition="top"
+                            fancy:fb_textColor="#1e74ff"
+
+                            fancy:fb_fontIconSize="20dp"
+                            fancy:fb_radius="100dp"
+                            android:layout_alignBottom="@+id/linearLayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp" />
+                -->
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="5dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:clickable="true"
+            android:onClick="profilee"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/customer_profile"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="Profile"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="5dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:onClick="EMI_View"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/emi_details"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="EMI Details"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                android:clickable="true"
+                android:onClick="goo"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/request"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Request"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:onClick="showMesaagess"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/message"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Message"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sartha Micro Finance Foundation"
+            android:id="@+id/textView62"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

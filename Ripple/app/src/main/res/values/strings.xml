@@ -1,0 +1,598 @@
+<resources>
+    <string name="app_name">Sartha Micro Finance</string>
+
+
+    <string name="string_pick_up_image">Click Anywhere to Pickup Image</string>
+
+    <string name="help">Help</string>
+    <string name="string_help_text"> The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="quit">Exit App</string>
+    <string name="string_title_upload_progressbar_">Uploading.. Wait for a while...</string>
+    <string name="string_upload_success">File Uploaded Successfully..</string>
+    <string name="string_upload_fail">Something went wrong</string>
+    <string name="string_internet_connection_warning">Internet Connection not Available</string>
+    <string name="string_message_to_attach_file">First attach file to upload</string>
+    <string name="string_choose_image">Select Image to Upload</string>
+    <string name="string_unable_to_pick_image">Unable to Pickup Image</string>
+    <string name="string_unable_to_load_image">Unable to Load Image</string>
+
+
+    <string name="notice_board">Subscribe To Our Health Tips </string>
+    <string name="our_goal">Stay health and enjoy life in fullness</string>
+    <string name="instruction">If you are hoping to stay health you are welcome to join us in our journey with million of people world wide on useful and life changing tips that will not
+    only make you to stay health but strong as you grow older. </string>
+    <string name="subscribe">Subscription status </string>
+    <string name="status">Welcome back. Your subscription is still valid</string>
+    <string name="registered">You can receive notification </string>
+    <string name="un_register">You cannot receive notification</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="font_awesome_android_icon">&#xf17b;</string>
+    <string name="font_awesome_area_chart_icon">&#xf1fe;</string>
+    <string name="font_awesome_cubes_icon">&#xf1b3;</string>
+    <string name="font_awesome_mobile_phone_icon">&#xf10b;</string>
+
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="title">ImageCropper</string>
+    <string name="rotate">Rotate</string>
+    <string name="reset">Reset</string>
+    <string name="crop">Crop</string>
+    <string name="saving">Saving</string>
+
+    <string name="icon_money">&#xf0d6;</string>
+
+    <string name="icon_send1">&#xf1d9;</string>
+    <string name="icon_cancel1">&#xf05c;</string>
+
+
+    <string name="icon_user">&#xf007;</string>
+    <string name="icon_add">&#xf067;</string>
+    <string name="icon_readmore">&#xf178;</string>
+    <string name="icon_answer">&#xf095;</string>
+    <string name="icon_mute">&#xf131;</string>
+
+    <string name="icon_like">&#xf087;</string>
+    <string name="icon_share">&#xf064;</string>
+    <string name="icon_follow">&#xf005;</string>
+
+    <string name="icon_android">&#xf17b;</string>
+    <string name="icon_dropbox">&#xf16b;</string>
+    <string name="icon_soundcloud">&#xf1be;</string>
+    <string name="icon_spotify">&#xf1bc;</string>
+
+    <string name="icon_vine">&#xf1ca;</string>
+    <string name="icon_twitter">&#xf099;</string>
+    <string name="icon_tumbler">&#xf173;</string>
+    <string name="icon_stackoverflow">&#xf16c;</string>
+    <string name="icon_gplus">&#xf0d5;</string>
+    <string name="icon_facebook">&#xf09a;</string>
+
+    <string name="icon_entypo_facebook">&#59140;</string>
+
+    <string name="icon_behance">&#xf1b4;</string>
+    <string name="icon_dribble">&#xf17d;</string>
+
+    <string name="icon_send">&#xf1d8;</string>
+    <string name="icon_download">&#xf0ed;</string>
+    <string name="icon_upload">&#xf0ee;</string>
+    <string name="icon_config">&#xf085;</string>
+    <string name="icon_creditcard">&#xf09d;</string>
+
+
+    <string name="icon_more">&#xf142;</string>
+    <string name="icon_up">&#xf077;</string>
+    <string name="icon_down">&#xf078;</string>
+
+    <string name="icon_date">&#xf073;</string>
+    <string name="icon_calcu">&#xf1ec;</string>
+    <string name="icon_xf1ec">&#xf077;</string>
+    <string name="icon_done_calcu">&#xf274;</string>
+
+
+    <string name="icon_rupi">&#xf156;</string>
+    <string name="icon_userDetails">&#xf2c0;</string>
+
+
+    <string name="ghost_button_title">Ghost Button</string>
+    <string name="icon_envelope"></string>
+
+    <string name="icon_task">&#xf0ae;</string>
+    <string name="icon_list">&#xf02c;</string>
+
+    <string name="icon_Veti">&#xf046;</string>
+
+    <string name="icon_circle">&#xf007;</string>
+
+    <string name="icon_Message">&#xf003;</string>
+    <string name="icon_info">&#xf129;</string>
+    <string name="icon_help">&#xf128;</string>
+    <string name="icon_contact">&#xf095;</string>
+
+
+    <string name="icon_cancel">&#xf00d;</string>
+    <string name="icon_max">&#xf065;</string>
+    <string name="icon_min">&#xf066;</string>
+
+    <!-- Names -->
+    <string-array name="Member_namesTask">
+        <item>ABC</item>
+        <item>XYZ</item>
+        <item>MNO</item>
+        <item>PQR</item>
+        <item>XYZ</item>
+        <item>ASD</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_picsTask">
+        <item>@drawable/user_thumb</item>
+        <item>@drawable/user_thumb</item>
+        <item>@drawable/user_thumb</item>
+        <item>@drawable/user_thumb</item>
+        <item>@drawable/user_thumb</item>
+        <item>@drawable/user_thumb</item>
+    </array>
+
+    <string-array name="pending">
+        <item>Process</item>
+        <item>Process</item>
+        <item>Process</item>
+        <item>Process</item>
+        <item>Process</item>
+        <item>Process</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="pending_note">
+        <item>Not</item>
+        <item>Not</item>
+        <item>Not</item>
+        <item>Not</item>
+        <item>Not</item>
+        <item>Not</item>
+    </string-array>
+
+
+    <string-array name="done">
+        <item>Process Done</item>
+        <item>Process Done</item>
+        <item>Process Done</item>
+        <item>Process Done</item>
+        <item>Process Done</item>
+        <item>Process Done</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="done_note">
+        <item>OK</item>
+        <item>OK</item>
+        <item>OK</item>
+        <item>OK</item>
+        <item>OK</item>
+        <item>OK</item>
+    </string-array>
+
+
+    <string-array name="Clear">
+        <item>Process Clear</item>
+        <item>Process Clear</item>
+        <item>Process Clear</item>
+        <item>Process Clear</item>
+        <item>Process Clear</item>
+        <item>Process DoClearne</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="Clear_note">
+        <item>Clear</item>
+        <item>Clear</item>
+        <item>Not Clear</item>
+        <item>Clear</item>
+        <item>Not Clear</item>
+        <item>Clear</item>
+    </string-array>
+
+    <string-array name="Total">
+        <item>Done</item>
+        <item>Done</item>
+        <item>Done</item>
+        <item>Done</item>
+        <item>Done</item>
+        <item>Done</item>
+    </string-array>
+
+    <!-- contact type -->
+    <string-array name="total_note">
+        <item>Done</item>
+        <item>Clear</item>
+        <item>Not Done</item>
+        <item>Clear</item>
+        <item>Not Clear</item>
+        <item>Process</item>
+    </string-array>
+
+
+    <!-- Names -->
+    <string-array name="Member_names">
+        <item>Mobile</item>
+        <item>TVs</item>
+        <item>Washing Machine</item>
+        <item>Kitchen Appliances</item>
+        <item>Small Home Appliances</item>
+        <item>Featured</item>
+    </string-array>
+
+    <string-array name="appsts">
+        <item>Mobile</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+        <item>@drawable/ic_other_shopping_cart_black_24dp</item>
+    </array>
+
+    <!-- Names -->
+    <string-array name="appliances_names">
+        <item>Microwave Ovens</item>
+        <item>Mixer/Juicer/Grinder</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="appliances_pics">
+        <item>@drawable/appliances</item>
+        <item>@drawable/appliances</item>
+    </array>
+
+    <string-array name="decore_names">
+        <item>Craft</item>
+        <item>Clothing</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="decore_pics">
+        <item>@drawable/home_decore</item>
+        <item>@drawable/home_decore</item>
+    </array>
+
+    <string-array name="book_names">
+        <item>Books</item>
+        <item>Gaming</item>
+        <item>Sports</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="book_pics">
+        <item>@drawable/books_a_more</item>
+        <item>@drawable/books_a_more</item>
+        <item>@drawable/books_a_more</item>
+    </array>
+
+    <string-array name="men_names">
+        <item>T-Shirts</item>
+        <item>Jeans</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="men_pics">
+        <item>@drawable/men</item>
+        <item>@drawable/men</item>
+    </array>
+
+    <string-array name="women_names">
+        <item>Sarees</item>
+        <item>Silver Jewellery</item>
+    </string-array>
+    <!-- Pictures -->
+    <array name="women_pics">
+        <item>@drawable/women</item>
+        <item>@drawable/women</item>
+    </array>
+
+    <string-array name="kids_names">
+        <item>Boys Footwear</item>
+        <item>School Shoes</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="kids_pics">
+        <item>@drawable/baby_a_kids</item>
+        <item>@drawable/baby_a_kids</item>
+    </array>
+
+    <string-array name="other_names">
+        <item>Sports</item>
+        <item>Food</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="other_pics">
+        <item>@drawable/other</item>
+        <item>@drawable/other</item>
+    </array>
+    <!-- Status -->
+    <string-array name="statues">
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+    </string-array>
+
+
+    <string-array name="bike_names">
+        <item>Honda</item>
+        <item>Bajaj</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="bike_pics">
+        <item>@drawable/bikes</item>
+        <item>@drawable/bikes</item>
+    </array>
+    <!-- contact type -->
+    <string-array name="contactType">
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+    </string-array>
+
+
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
+    <string name="title_activity_simple_tabs">Simple Tabs</string>
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+    <string name="more" translatable="false">Info</string>
+    <string name="emailC">Send with</string>
+    <string name="lib1sum">Source code</string>
+    <string name="error">Install a browser</string>
+    <string name="company_name" translatable="false">iven</string>
+    <string name="chooser_title">Choose your browser &#8230;</string>
+    <string name="no_internet">Connect to the internet please</string>
+    <string name="loading">Please wait &#8230;</string>
+    <string name="rate_me">Rate</string>
+
+    <!-- Preferences -->
+
+    <!-- Titles & summaries -->
+    <string name="opts">Theme options</string>
+    <string name="aboutopts" translatable="false">About</string>
+    <string name="moreopts">Other options</string>
+    <string name="settings">Options</string>
+    <string name="info" translatable="false">Credits</string>
+    <string name="build_number">Build\'s version</string>
+    <string name="changelog" translatable="false">Changelog</string>
+    <string name="prelollipop">Option not available on pre-Lollipop devices</string>
+    <string name="preics">Option not available on pre-ICS devices</string>
+    <string name="premarshmallow">Option not available on pre-Marshmallow devices</string>
+
+    <!-- Theme options -->
+    <string name="pref_theme_title">App theme</string>
+    <string name="themesum">The app needs to be restarted</string>
+    <string name="pref_theme" translatable="false">pref_theme</string>
+    <string name="pref_theme_list" translatable="false">pref_theme_list</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="darkest_theme">Darker</string>
+
+    <!-- Dark status icons mode -->
+    <string name="light_mode">Dark status icons</string>
+    <string name="light_mode_sum">Enable dark colored status bar icons</string>
+
+    <!-- Navigation bar tint -->
+    <string name="nav_color">Enable navbar tint</string>
+    <string name="nav_color_sum">This will enable navigation bar tinting</string>
+
+    <!-- Immersive mode -->
+    <string name="immersive_mode">Immersive mode</string>
+    <string name="immersive_mode_sum">Enable immersive mode on article\'s activity</string>
+
+    <!-- No images -->
+    <string name="no_images">Disable images</string>
+    <string name="no_images_sum">Disable article\'s images visualisation</string>
+
+    <!-- WebView -->
+    <string name="Reading">Use webview</string>
+    <string name="Readingsum">Read more using in-app webview</string>
+    <string name="JS_script_on">Enable JavaScript</string>
+
+    <!-- Text size options -->
+    <string name="pref_text_size" translatable="false">pref_text_size</string>
+    <string name="pref_text_size_list" translatable="false">pref_text_size_list</string>
+    <string name="pref_text_size_title">Adjust articles font</string>
+    <string name="pref_text_size_list_title">Adjust items font</string>
+    <string name="pref_text_size_summary">Choose default text size on articles</string>
+    <string name="pref_text_size_list_summary">Choose default text size of the home items</string>
+    <string name="pref_text_verysmall">Very small</string>
+    <string name="pref_text_small">Small</string>
+    <string name="pref_text_medium">Medium</string>
+    <string name="pref_text_large">Large</string>
+    <string name="pref_text_verylarge">Very large</string>
+
+    <!-- Clear cache -->
+    <string name="clear_cache">Clear app cache</string>
+    <string name="clear_cache_sum">This option will clean the app cache and reset the options</string>
+
+    <!-- Custom feeds -->
+    <string name="deletedialogtitle">Discard feed</string>
+    <string name="deletedialogquestion">Do you want to discard</string>
+    <string name="deleteok">Discard</string>
+    <string name="deleteno">Cancel</string>
+    <string name="adddialogtitle">Feed addition</string>
+    <string name="feedmenu">Add a feed</string>
+    <string name="url_name">Url here</string>
+    <string name="title_name">Name here</string>
+    <string name="adddialogfeed">Insert your custom feed in RSS format</string>
+
+    <!-- More feeds -->
+    <string name="moar">Built in feed</string>
+    <string name="moar_pref">Show built in feeds</string>
+    <string name="moar_pref_sum">Show built in feeds menu if enabled</string>
+    <string name="noobs" translatable="false">Noobslab</string>
+    <string name="softpedia" translatable="false">Softpedia</string>
+    <string name="web8" translatable="false">Web Upd8</string>
+    <string name="omg" translatable="false">OMG! Ubuntu!</string>
+    <string name="police" translatable="false">Android Police</string>
+    <string name="xda" translatable="false">XDA developers</string>
+    <string name="ac" translatable="false">Android Community</string>
+
+    <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-8892102502387806/1010830405</string>
+    <string name="interstitial_full_screen">ca-app-pub-8892102502387806/8394496402</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Android Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="defaultText">  Select User </string>
+    <drawable name="Blue">#b0e0e6</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="green">#347C2C</drawable>
+    <drawable name="pink">#FF00FF</drawable>
+    <drawable name="violet">#a020f0</drawable>
+    <drawable name="grey">#cccccc</drawable>
+    <drawable name="red">#C11B17</drawable>
+    <drawable name="yellow">#FFFF8C</drawable>
+    <drawable name="PowderBlue">#b0e0e6</drawable>
+    <drawable name="brown">#2F1700</drawable>
+    <string name="select_Category">Select User</string>
+    <drawable name="darkgrey">#606060</drawable>
+
+    <string-array name="sports_array">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>Table Tennis</item>
+        <item>Basket Ball</item>
+        <item>Foot Ball</item>
+        <item>Volley Ball</item>
+        <item>Hockey</item>
+        <item>Swimming</item>
+    </string-array>
+
+
+    <string name="desc"></string>
+    <string name="du">°C</string>
+    <string-array name="pm_grade_name">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>>300</item>
+    </string-array>
+
+    <integer-array name="pm_grade_value">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+    </integer-array>
+
+    <string name="linkedin">Linked In</string>
+    <string name="googleplus">Google+</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="qq">QQ</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="flickr">Flickr</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="vkontakte">VK</string>
+    <string name="instagram">Instagram</string>
+
+    <string name="textsize">15</string>
+    <string name="textsizesmall">12</string>
+    <string name="textsizeX">12</string>
+    <string name="title_activity_main4">Main4Activity</string>
+
+
+    <string name="sharee">
+
+Sartha Micro Finanace Foundation
+FF-43, Shourya Arcade
+Opposite Ekatma Prisar
+Rajbandha Maidan Raipur(C.G.),
+492001
+\n
+E-Mail : service@sarthamicrofinance.com, info@sarthamicrofinance.com
+        \n
+Contact : 0771 4016612
+        \n
+Website :  http://sarthamicrofinance.com/
+
+    </string>
+
+<string name="ssss">
+    BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+BlurPopupWindow is not actually a sub-class of PopupWindow. But we did run into some requirements that display a popup in current page with blurred background. Or you may want to display a custom dialog and you are in trouble with the difficulty and diffrent-result through different sdk version and roms. It is possible to just put a simple custom View in current Window and do not bring that lots of other things in?
+
+</string>
+
+    <string name="infoo">
+
+        Sartha Micro Finance Company is a non-profit making organization incorporated under section 8 of Companies Act, 2013 in 2016 to reduce poverty, by carrying on the business of providing micro finance services, as permitted from time to time by the Reserve Bank of India (RBI) exclusively to large number of poor men and women and thus to help them and their families out of the poverty, further to provide collateral free credit to poor’s and to deliver micro credit and other permitted financial services to them, with a view to provide them a sustainable livelihood above the poverty-line, and of creating financially-sustainable, community-owned micro finance institution for the poor’s.
+    </string>
+    <string name="title_activity_maps">Map</string>
+<string name="google_maps_key">AIzaSyAlm3uYnPAJz2w9-v0ufrLe3fWDjwXdgTU</string>
+
+</resources>

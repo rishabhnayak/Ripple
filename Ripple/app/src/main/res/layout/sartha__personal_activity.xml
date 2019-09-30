@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fhgk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#000000ff"
+    android:gravity="center_vertical|center_horizontal">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignParentRight="false"
+        android:background="#000000ff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:background="#00ffffff">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessB"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    android:onClick="sahayak"
+                    fancy:fb_fontIconResource="&#xf21d;"
+                    fancy:fb_defaultColor="#b869da"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_text="Sartha Sahayak"
+                    fancy:fb_textColor="#ffffff"
+
+                    fancy:fb_fontIconSize="50dp"
+                    fancy:fb_radius="100dp"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sartha Sahayak (up to 15,000/-) ROI : 3.0%"
+                    android:id="@+id/textView73"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12dp" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessE"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+
+                    android:onClick="sahayakplus"
+                    fancy:fb_fontIconResource="&#xf1e7;"
+                    fancy:fb_defaultColor="#85ac10"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_text="Sartha Sahayak Plus"
+                    fancy:fb_textColor="#ffffff"
+
+                    fancy:fb_fontIconSize="50dp"
+                    fancy:fb_radius="100dp"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sartha Sahayak Plus (15,000/- to 25,000/-)   ROI : 3.0%% "
+                    android:id="@+id/textView74"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessT"
+                    android:onClick="subharambh"
+
+                    fancy:fb_fontIconSize="40dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    fancy:fb_defaultColor="#c68804"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_fontIconResource="&#xf1a5;"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="100dp"
+                    fancy:fb_text="Sartha Subharambh"
+                    fancy:fb_textColor="#FFFFFF"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sartha Subharambh (up to 15,000/-)   ROI 2.5% "
+                    android:id="@+id/textView75"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12dp" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/BusinessC"
+                    fancy:fb_fontIconSize="40dp"
+                    fancy:fb_borderColor="#e9e9e9"
+                    fancy:fb_borderWidth="4dp"
+                    android:layout_width="260dp"
+                    android:layout_height="70dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:onClick="subharambhplus"
+                    android:paddingTop="10dp"
+                    fancy:fb_defaultColor="#5466d1"
+                    fancy:fb_focusColor="#FF1E74FF"
+                    fancy:fb_fontIconResource="&#xf219;"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="100dp"
+                    fancy:fb_text="Sartha Subharambh Plus"
+                    fancy:fb_textColor="#FFFFFF"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sartha Subharambh Plus (15,000/- to 25,000/-)   ROI 2.5% "
+                    android:id="@+id/textView77"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

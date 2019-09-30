@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/accent_color"
+        android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loan"
+        android:gravity="left"
+        android:drawableRight="@drawable/request"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="Loan Installment Details"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/accent_color"
+        android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noc"
+        android:gravity="left"
+        android:drawableRight="@drawable/request"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="NOC Details"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/accent_color"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/other"
+        android:drawableRight="@drawable/request"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="Other Details"/>
+</LinearLayout>
+</LinearLayout>

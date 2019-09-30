@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customet__emi_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="infracom.abcr.sarthamicrofinance.Profile.Customet_Emi_View">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EMI Details"
+            android:id="@+id/textView62"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff" />
+            </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/horizontalScrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent">
+
+                <LinearLayout
+                    android:id = "@+id/relativeLayout1"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "wrap_content"
+                    android:background = "#365368"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width = "40dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "12"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "No"
+                        android:textColor = "#ffffff" />
+
+                    <TextView
+                        android:layout_width = "60dp"
+                        android:layout_height = "wrap_content"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:visibility="gone"
+                        android:text = "Photo"
+                        android:textColor = "#ffffff" />
+
+                    <TextView
+                        android:layout_width = "200dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:visibility="gone"
+                        android:padding = "5dp"
+                        android:text = "Customer"
+                        android:textColor = "#ffffff"/>
+
+
+                    <TextView
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Instalment date"
+                        android:textColor = "#ffffff"/>
+
+                    <TextView
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Cheque No."
+                        android:textColor = "#ffffff" />
+
+                    <TextView
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "EMI"
+                        android:textColor = "#ffffff" />
+
+                    <TextView
+                        android:layout_width = "100dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Paid Amount"
+                        android:textColor = "#ffffff" />
+
+                    <TextView
+                        android:layout_width = "200dp"
+                        android:layout_height = "wrap_content"
+                        android:layout_weight = "22"
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Remarks"
+                        android:textColor = "#ffffff"/>
+
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id = "@+id/listview"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "match_parent"
+                    android:divider = "@null"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/scrollView13" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp">
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="infracom.abcr.sarthamicrofinance">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="infracom.abcr.sarthamicrofinance.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- For handling overlay screen permission problem -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="infracom.abcr.sarthamicrofinance.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="infracom.abcr.sarthamicrofinance.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Controller"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme_iven">
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".mainact.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="infracom.abcr.sarthamicrofinance" />
+            </intent-filter>
+        </activity>
+        <!-- Firebase Notifications -->
+        <service android:name=".Register.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Register.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".Main" />
+        <!-- adding our service -->
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".DynamicTab.MainActivityD"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DynamicTab.SubProduct"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DynamicTab.MainActivityTask"
+            android:configChanges="orientation|screenSize" />
+
+        <!--
+               <activity android:name=".slidetablistview.MainActivity2"></activity>
+
+            Main Activity
+        -->
+        <activity
+            android:name=".RMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".GridViewExample"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SendPushNotification"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ShowMessage"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="infracom.abcr.sarthamicrofinance" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+        -->
+
+        <activity
+            android:name=".crop.imagecropper.CropImageActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Order.Order"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Order.Task_Process"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".DynamicTab.DatabaseActivity" />
+        <activity
+            android:name=".DynamicTab.Launch"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Profile.EmpProfile"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Chart.example.mylinechart.LineChartActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Chart.example.mylinechart.BarChartActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Register.FMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Profile.Manager_Launch"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.Customer_Launch"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.Manager_Approve"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profile.Admin_Launch"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".CropIMG" />
+        <activity
+            android:name=".AllShow_Message"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Profile.Add_EMP"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profile.Disbursement"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".reports.business_reports"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".reports.Exception_Peport"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".reports.Trending_Report"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CATEGORIES.Sartha_Product"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CATEGORIES.Sartha_Personal"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CATEGORIES.Sartha_Sanchar_Product" />
+        <activity android:name=".CATEGORIES.Personal_Loan_Pass" />
+        <activity
+            android:name=".CATEGORIES.Sartha_Purpose_loan"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".reports.Business_Report.Business_report_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".reports.Receivable_Reports"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".reports.Business_Report.Critical_Reports" />
+        <activity
+            android:name=".Recovery_Allot"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AssignEMP.Recovery_EMP_Assign"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AssignEMP.Recovery_Person"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AssignEMP.Pay_Installment"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AssignEMP.Recovery_list_Assign"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AssignEMP.Panalty_Count"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AssignEMP.Pay_Recovery_Dealer" />
+        <activity android:name=".CATEGORIES.Product_Details" />
+        <activity android:name=".Profile.ManageTeam" />
+        <activity android:name=".CATEGORIES.LestOFEMP" />
+        <activity android:name=".Profile.DealerLogin" />
+        <activity android:name=".Profile.Marketing" />
+        <activity
+            android:name=".GroupLoan.GroupLoanSearch"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity android:name=".GroupLoan.GroupProfileForm" />
+        <activity
+            android:name=".GroupLoan.AddDSA"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GroupLoan.Group_Approve_List"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".GroupLoan.Approve_Group_Details"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profile.Search_All_Customer"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Calculator.FORECLOSURE_LETTER" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".GroupLoan.GroupDisbursement"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".GroupLoan.DsaRecovery"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".GroupLoan.Gpay_Installment"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.SeeAllCustomer"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ImageUp.permission.PermissionsActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".activity.AboutSartha" />
+        <activity android:name=".Profile.Customet_Emi_View"></activity>
+
+
+        <activity android:name=".Location.SP_Locatin" />
+        <activity android:name=".Location.Customer_Locatin" />
+        <service android:name=".mainact.location_Service" />
+
+    </application>
+
+</manifest>

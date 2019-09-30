@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+       <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/dec_quantity_right"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_area"
+
+                android:id="@+id/imagep" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/titlep"
+                android:layout_margin="@dimen/dec_quantity_right"
+                android:text="There are some points you need to know"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:textSize="16dp"
+                android:id="@+id/descp"
+                android:text="@string/ssss"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

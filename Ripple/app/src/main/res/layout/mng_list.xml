@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view10">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e2dfdf">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="desc"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#ffffff"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:text="abc"
+                    android:textColor="#4f4f4f"
+                    android:layout_alignTop="@+id/profile_pic"
+                    android:layout_toRightOf="@+id/profile_pic"
+                    android:layout_toEndOf="@+id/profile_pic" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/member_name"
+                    android:layout_below="@+id/member_name"
+                    android:textSize="14dp"
+                    android:textColor="#4f4f4f"
+                    android:text="xyz" />
+
+                <TextView
+                    android:id="@+id/contact_typetime"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    android:textColor="#d5ffffff"
+                    android:layout_alignBottom="@+id/profile_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView15"
+                    android:background="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/csase"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="Profile Approval/Decline"
+                        android:textColor="#4f4f4f"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toLeftOf="@+id/sname"
+                        android:layout_toStartOf="@+id/sname" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Message..."
+                        android:id="@+id/textView37"
+                        android:background="@drawable/in_message_bg"
+                        android:layout_below="@+id/csase"
+                        android:layout_alignLeft="@+id/csase"
+                        android:layout_alignStart="@+id/csase"
+                        android:layout_toStartOf="@+id/profile_pic1"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toLeftOf="@+id/profile_pic1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_pic1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="desc"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#ffffff"
+                        android:layout_above="@+id/sid"
+                        android:layout_alignRight="@+id/sid"
+                        android:layout_alignEnd="@+id/sid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/timrid"
+                        android:layout_below="@+id/textView37"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="5dp"
+                        android:textColor="#4f4f4f"
+                        android:textSize="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/sid"
+                        android:layout_below="@+id/textView37"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="5dp"
+                        android:textColor="#4f4f4f"
+                        android:textSize="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/sname"
+                        android:layout_below="@+id/textView37"
+                        android:layout_toLeftOf="@+id/sid"
+                        android:layout_toStartOf="@+id/sid"
+                        android:layout_margin="5dp"
+                        android:textColor="#4f4f4f"
+                        android:textSize="8dp" />
+
+                </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#c4c4c4"></RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

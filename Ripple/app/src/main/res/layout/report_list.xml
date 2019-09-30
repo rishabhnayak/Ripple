@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background="@drawable/ripple">
+
+        <TextView
+            android:id = "@+id/sNo"
+            android:layout_width = "40dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "No" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:contentDescription="desc"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "No"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/customername"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+android:visibility="gone"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Customer Name" />
+
+        <TextView
+            android:id = "@+id/installment_date"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Installment Date" />
+
+        <TextView
+            android:id = "@+id/cheque"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Cheque No."/>
+
+
+        <TextView
+            android:id = "@+id/i_amount"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Amount"/>
+
+
+
+        <TextView
+            android:id = "@+id/paida"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "ROI Policy" />
+
+
+        <TextView
+            android:id = "@+id/remarks"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "ROI Applied" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

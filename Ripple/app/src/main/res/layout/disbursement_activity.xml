@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="infracom.abcr.sarthamicrofinance.Profile.Manager_Approve"
+    android:background="#ceffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView2" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/viewh7"
+                        android:layout_alignParentRight="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Disbursement Details"
+                            android:id="@+id/cccc"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Loan Amount  "
+                        android:id="@+id/textViewNameID"
+                        android:layout_below="@+id/textViewOrder"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Small Text"
+                        android:id="@+id/textViewOrder"
+                        android:layout_below="@+id/viewh7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCusto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Customer Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/view2"
+                        android:layout_below="@+id/view"
+                        android:layout_alignParentLeft="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameFather"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Father's Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/view3"
+                        android:layout_below="@+id/view2"
+                        android:layout_alignParentLeft="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/view4"
+                        android:layout_below="@+id/view3"
+                        android:layout_alignParentLeft="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view5"
+                        android:layout_below="@+id/view4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="City"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view6"
+                        android:layout_below="@+id/view5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/PinZip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ZIP"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="#FF1E74FF"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view27"
+                        android:layout_below="@+id/view6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNameEmailP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view233"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/view27"
+                        android:layout_alignParentLeft="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/txtNamePANP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="PAN Number"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHighlight="#FF1E74FF"
+                            android:textColorHint="#FF1E74FF"
+                            android:textColorLink="#FF1E74FF"
+                            android:textColor="#FF1E74FF"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/view233"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/relativeLayout7"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Bank Account Details"
+                                    android:id="@+id/textView36"
+                                    android:layout_marginTop="5dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/viewh2s7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Name"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vieddw2ss7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankBranchName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Branch Name"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vkkiew2ss7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/BankACC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Bank Account Number"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vkkiew2slls7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/Bankifsc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="IFSC Code"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Account type"
+                                        android:id="@+id/textView63G" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.RadioButton
+                                        android:id="@+id/SB"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="SB"
+                                        android:checked="true"
+                                        android:gravity="center_vertical"
+                                        app:v_styleId="@array/radio_button"
+                                        android:textSize="10dp" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.RadioButton
+                                        android:id="@+id/CA"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="CA"
+                                        android:checked="false"
+                                        android:gravity="center_vertical"
+                                        app:v_styleId="@array/radio_button"
+                                        android:textSize="10dp" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.RadioButton
+                                        android:id="@+id/CC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="CC"
+                                        android:checked="false"
+                                        android:gravity="center_vertical"
+                                        app:v_styleId="@array/radio_button"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/cheqeLeni">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Cheque Details"
+                                    android:id="@+id/cheque"
+                                    android:layout_marginTop="5dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/videwh2s7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/chequedate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Cheque Date"
+                                            android:inputType="text"
+                                            android:maxLines="1"
+                                            android:enabled="false"
+                                            android:singleLine="true"
+                                            android:textColorHighlight="#FF1E74FF"
+                                            android:textColorHint="#FF1E74FF"
+                                            android:textColorLink="#FF1E74FF"
+                                            android:textColor="#FF1E74FF"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_toStartOf="@+id/button5"
+                                            android:layout_toLeftOf="@+id/button5" />
+
+                                        <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Select Date"
+                                            android:id="@+id/button5"
+                                            android:layout_gravity="right"
+                                            android:onClick="datapick"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentEnd="true" />
+                                    </RelativeLayout>
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vieddw2ddss7"
+                                    android:layout_below="@+id/view6"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/emiamount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Amount"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textColorHighlight="#FF1E74FF"
+                                        android:textColorHint="#FF1E74FF"
+                                        android:textColorLink="#FF1E74FF"
+                                        android:textColor="#FF1E74FF"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <HorizontalScrollView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/horizontalScrollView4" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/TableLayout1"></TableLayout>
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|right"
+                                    android:layout_marginBottom="4dp"
+                                    android:id="@+id/viejw7"
+                                    android:layout_alignParentRight="false">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="#b9ffffff">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:text="Photo"
+                                                android:id="@+id/textView2"
+                                                android:textColor="#FF1E74FF"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_toRightOf="@+id/imageViewP"
+                                                android:gravity="right"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                            <ImageView
+                                                android:layout_width="200dp"
+                                                android:layout_height="100dp"
+                                                android:id="@+id/imageViewP"
+                                                android:background="@android:drawable/gallery_thumb"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true" />
+
+                                            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                                android:layout_width="50dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/imageButtonP"
+                                                app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                                app:v_styleId="@array/fab_icon"
+                                                app:fab_elevation="0.001dp"
+                                                android:onClick="backokLLL"
+                                                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignRight="@+id/textView2"
+                                                android:layout_alignEnd="@+id/textView2"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="5dp" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|right"
+                                    android:layout_marginBottom="4dp"
+                                    android:id="@+id/vniew7"
+                                    android:layout_alignParentRight="false">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="#b9ffffff">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:text="Aadhar Card"
+                                                android:id="@+id/textView9"
+                                                android:textColor="#FF1E74FF"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_toRightOf="@+id/imageViewA"
+                                                android:gravity="right"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                            <ImageView
+                                                android:layout_width="200dp"
+                                                android:layout_height="100dp"
+                                                android:id="@+id/imageViewA"
+                                                android:background="@android:drawable/gallery_thumb"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true" />
+
+                                            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                                android:layout_width="50dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/imageButtonA"
+                                                app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                                app:v_styleId="@array/fab_icon"
+                                                app:fab_elevation="0.001dp"
+                                                android:onClick="backokLLL"
+                                                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|right"
+                                    android:layout_marginBottom="4dp"
+                                    android:id="@+id/uview7"
+                                    android:layout_alignParentRight="false">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="#b9ffffff">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:text="Pan Card"
+                                                android:id="@+id/textView76"
+                                                android:textColor="#FF1E74FF"
+                                                android:layout_alignParentBottom="true"
+                                                android:gravity="right"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                            <ImageView
+                                                android:layout_width="200dp"
+                                                android:layout_height="100dp"
+                                                android:id="@+id/imageViewD"
+                                                android:background="@android:drawable/gallery_thumb"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true" />
+
+                                            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                                android:layout_width="50dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/imageButtonD"
+                                                app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                                app:v_styleId="@array/fab_icon"
+                                                app:fab_elevation="0.001dp"
+                                                android:onClick="backokLLL"
+                                                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|right"
+                                    android:layout_marginBottom="4dp"
+                                    android:id="@+id/view7"
+                                    android:layout_alignParentRight="false">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="#b9ffffff">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:text="Address Proof"
+                                                android:id="@+id/textView27"
+                                                android:textColor="#FF1E74FF"
+                                                android:layout_alignParentBottom="true"
+                                                android:gravity="right"
+                                                android:layout_marginBottom="5dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_toRightOf="@+id/imageViewV"
+                                                android:layout_toEndOf="@+id/imageViewV"
+                                                android:layout_below="@+id/imageButtonV" />
+
+                                            <ImageView
+                                                android:layout_width="200dp"
+                                                android:layout_height="100dp"
+                                                android:id="@+id/imageViewV"
+                                                android:background="@android:drawable/gallery_thumb"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true" />
+
+                                            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                                android:layout_width="50dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/imageButtonV"
+                                                app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                                app:v_styleId="@array/fab_icon"
+                                                app:fab_elevation="0.001dp"
+                                                android:onClick="backokLLL"
+                                                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|right"
+                                    android:layout_marginBottom="4dp"
+                                    android:id="@+id/viewsa7"
+                                    android:layout_alignParentRight="false">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:background="#b9ffffff">
+
+                                        <RelativeLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="#d2e4eb">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:text="Invoices"
+                                                android:id="@+id/textVie3w27"
+                                                android:textColor="#FF1E74FF"
+                                                android:gravity="right"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true" />
+
+                                            <ImageView
+                                                android:layout_width="300dp"
+                                                android:layout_height="300dp"
+                                                android:id="@+id/backokLLLBB"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_below="@+id/textVie3w27"
+                                                android:background="@drawable/ic_launcher" />
+
+                                            <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                                android:layout_width="50dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/imageButtonB"
+                                                app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                                app:v_styleId="@array/fab_icon"
+                                                app:fab_elevation="0.001dp"
+                                                app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#729dceff"
+                                    android:layout_marginTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Take Product Hand Over Picture Of Customer"
+                                        android:id="@+id/textView60"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_margin="5dp" />
+
+                                    <ImageView
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:id="@+id/imageView18"
+                                        android:background="@drawable/ic_launcher"
+                                        android:layout_below="@+id/textView60"
+                                        android:layout_centerHorizontal="true" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageButtonDISBUS"
+                                        app:fab_iconSrc="@drawable/ic_camera_alt_black_24dp"
+                                        app:v_styleId="@array/fab_icon"
+                                        app:fab_elevation="0.001dp"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignRight="@+id/textView60"
+                                        android:layout_alignEnd="@+id/textView60" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Confirmation of product delivery"
+                                    android:id="@+id/textView90"
+                                    android:background="#f2e6e6" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp">
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Application Form Filled"
+                                        android:id="@+id/Application_Form_Filled"
+                                        android:layout_marginTop="5dp"
+                                        android:checked="false" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Picture of customer with product with GPS location"
+                                        android:id="@+id/Picture_of_customer_with_product_with_GPS_location"
+                                        android:checked="false"
+                                        android:layout_marginTop="10dp" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Picture of original invoice."
+                                        android:id="@+id/Picture_of_original_invoice"
+                                        android:layout_marginTop="10dp"
+                                        android:checked="false" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Confirmation on physical copy (self signed) collected  (for which picture is sent)"
+                                        android:id="@+id/Confirmation_physical_copy"
+                                        android:layout_marginTop="10dp"
+                                        android:checked="false" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Confirmation on docket signed and filled."
+                                        android:id="@+id/Confirmation_on_docket"
+                                        android:layout_marginTop="10dp"
+                                        android:checked="false" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Copy of Saction obtained"
+                                        android:id="@+id/Copy_Saction_obtained"
+                                        android:layout_marginTop="10dp"
+                                        android:checked="false" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Original Invoice Obtained"
+                                        android:id="@+id/Invoice_Obtained"
+                                        android:layout_marginTop="10dp"
+                                        android:checked="false" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Attested Copy Obtained"
+                                            android:id="@+id/textView91"
+                                            android:layout_marginTop="5dp" />
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Address Proof"
+                                            android:id="@+id/Address_Proof"
+                                            android:layout_marginTop="5dp"
+                                            android:checked="false" />
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="PAN Copy"
+                                            android:id="@+id/PAN_Copy"
+                                            android:layout_marginTop="5dp"
+                                            android:checked="false" />
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Aadhar Copy"
+                                            android:id="@+id/Aadhar_Copy"
+                                            android:layout_marginTop="5dp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/inputSearch"
+                                    android:visibility="gone" />
+
+                                <ScrollView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/scrollView6" >
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/pppp"
+                                        android:background="#ebcfab">
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Approval Casece"
+                                            android:id="@+id/textView89"
+                                            android:background="#d7dced" />
+
+                                        <ListView
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:id="@+id/appp"
+                                            android:layout_width="fill_parent" />
+
+                                    </LinearLayout>
+                                </ScrollView>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:background="#004d9a"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:id="@+id/textPoster1"
+                                        android:hint="Search products.."
+                                        android:inputType="textVisiblePassword"
+                                        android:text="Approval Casece(Summary)"
+                                        android:textColor="#ffffff" />
+
+                                    <infracom.abcr.sarthamicrofinance.material.widget.FloatingActionButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/backdddL"
+                                        app:fab_iconSrc="@drawable/ic_error_outline_black_24dp"
+                                        app:v_styleId="@array/fab_iconBig"
+                                        app:fab_elevation="0.001dp"
+                                        android:onClick="showAppCasece"
+                                        app:fab_animDuration="@android:integer/config_shortAnimTime"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_margin="5dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/appstskii">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_height="match_parent">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Decline"
+                                        android:id="@+id/Decline"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:onClick="backok" />
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Disbus"
+                                        android:id="@+id/submit"
+                                        android:textColor="#ffffff"
+                                        android:background="@color/colorAccent"
+                                        android:layout_gravity="right"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:onClick="Submit1" />
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Query"
+                                        android:id="@+id/Query"
+                                        android:onClick="queryDo"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="#4e9f4c"
+                                        android:textColor="#ffffff" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout2"
+                        android:layout_below="@+id/textViewNameID"
+                        android:layout_alignLeft="@+id/textViewOrder"
+                        android:layout_alignStart="@+id/textViewOrder">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Purpose"
+                                android:id="@+id/textView11"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/Product_Name"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView11"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:id="@+id/h1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Product Price"
+                                android:id="@+id/textView13"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Product Price"
+                                android:id="@+id/Product_Price"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView13"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:background="#FF1E74FF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Loan Amount(LTV Applied)"
+                                android:id="@+id/textView15"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/Loan_Amount"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView15"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginBottom="5dp"
+                            android:background="#9a0e15"
+                            android:id="@+id/h2">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Loan Amount(LTV Policy)"
+                                android:id="@+id/textView67"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="LTVP"
+                                android:id="@+id/LTVP"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView67"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:background="#FF1E74FF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Percent Rate(ROI Applied)"
+                                android:id="@+id/textView17"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Percenr_Rate"
+                                android:id="@+id/Percenr_Rate"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView17"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginBottom="5dp"
+                            android:background="#9a0e15" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Percent Rate(ROI Policy)"
+                                android:id="@+id/textView69"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Percenr_Rate"
+                                android:id="@+id/ROIP"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView69"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Tuner"
+                                android:id="@+id/textView19"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/Ptuner_y"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView19"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="EMI"
+                                android:id="@+id/textView21"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/textViewPemi"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView21"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Frequency"
+                                android:id="@+id/Frequencysdsd"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/Frequency"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/Frequencysdsd"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:id="@+id/h3">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Scheme Type"
+                                android:id="@+id/ss"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/SchemeType"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/ss"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:id="@+id/h4">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Advance EMI"
+                                android:id="@+id/AdvanceEMIzz"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/AdvanceEMI"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/AdvanceEMI"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:id="@+id/h5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Down Payment"
+                                android:id="@+id/zx"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/DownPayment"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/zx"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:id="@+id/h6">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Disbursement"
+                                android:id="@+id/ssdd"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/Disbursement"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/Disbursement"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FF1E74FF"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Total"
+                                android:id="@+id/textView23"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toLeftOf="@+id/textViewNameID"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignLeft="@+id/textViewOrder"
+                                android:layout_alignStart="@+id/textViewOrder"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/textViewPtotal"
+                                android:layout_below="@+id/textViewNameID"
+                                android:layout_toRightOf="@+id/textView23"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="5dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/uploadDone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="1dp"
+        fancy:fb_borderColor="#ffffff"
+        fancy:fb_borderWidth="3dp"
+
+        fancy:fb_fontIconResource="&#xf021;"
+        fancy:fb_defaultColor="#009e05"
+        fancy:fb_focusColor="#ffffff"
+        fancy:fb_iconPosition="top"
+        fancy:fb_textColor="#ffffff"
+        fancy:fb_fontIconSize="22dp"
+        fancy:fb_radius="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

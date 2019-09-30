@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ripple">
+
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background="@drawable/ripple">
+
+        <TextView
+            android:id = "@+id/sNo"
+            android:layout_width = "60dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "No"
+            android:singleLine = "true" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:contentDescription="desc"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "No"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/customername"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Customer Name"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/city"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "City"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price1"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Product"
+            android:singleLine = "true" />
+
+
+        <TextView
+            android:id = "@+id/price2"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Amount"
+            android:singleLine = "true" />
+
+
+
+        <TextView
+            android:id = "@+id/price3"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "ROI Policy"
+            android:singleLine = "true" />
+
+
+        <TextView
+            android:id = "@+id/price5"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "ROI Applied"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price6"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "LTV Policy"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price7"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "LTV Applied"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price4"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Remarks"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price8"
+            android:layout_width = "200dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Date"
+            android:singleLine = "true" />
+
+        <TextView
+            android:id = "@+id/price9"
+            android:layout_width = "500dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "22"
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Dealer"
+            android:singleLine = "true" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
