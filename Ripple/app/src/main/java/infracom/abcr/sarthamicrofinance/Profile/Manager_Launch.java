@@ -2421,11 +2421,20 @@ public void Recovery(View view){
                 if(ppff.equals("")){
 
 
-                    if(amount12>10000){
+                 if (amount12>=15000){
                         pfee=599.0;
                     }
-                    else{
-                        pfee=499.0;
+                     if (amount12>=20001){
+                        pfee=699.0;
+                    }
+                    if (amount12>=25001){
+                        pfee=799.0;
+                    }
+                     if (amount12>=30001){
+                        pfee=899.0;
+                    }
+                    if(amount12<15000){
+                        pfee=599.0;
                     }
 
                     PF.setText(pfee.toString());
@@ -2893,12 +2902,21 @@ public void Recovery(View view){
                     Double pfee=0.0;
 
 
-                        if(amount12>10000){
-                            pfee=599.0;
-                        }
-                        else{
-                            pfee=499.0;
-                        }
+                 if (amount12>=15000){
+                        pfee=599.0;
+                    }
+                     if (amount12>=20001){
+                        pfee=699.0;
+                    }
+                    if (amount12>=25001){
+                        pfee=799.0;
+                    }
+                     if (amount12>=30001){
+                        pfee=899.0;
+                    }
+                    if(amount12<15000){
+                        pfee=599.0;
+                    }
 
                         PF.setText(pfee.toString());
 

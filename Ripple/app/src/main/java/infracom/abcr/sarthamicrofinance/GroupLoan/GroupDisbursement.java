@@ -1142,7 +1142,6 @@ public class GroupDisbursement extends AppCompatActivity {
     }
 
     private void SaveImage(Bitmap finalBitmap) {
-
         String root = Environment.getExternalStorageDirectory().toString();
         File myDir = new File(root + "/saved_images");
         File sdCard = Environment.getExternalStorageDirectory();

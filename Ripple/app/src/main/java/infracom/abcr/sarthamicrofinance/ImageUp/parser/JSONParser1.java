@@ -78,6 +78,9 @@ public class JSONParser1 {
 
 
                         .build();
+
+
+
                  request = new Request.Builder()
                         .url(URL_UPLOAD_IMAGE)
                         .post(requestBody)

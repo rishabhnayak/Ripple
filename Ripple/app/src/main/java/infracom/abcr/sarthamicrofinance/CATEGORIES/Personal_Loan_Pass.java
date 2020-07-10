@@ -1812,11 +1812,20 @@ public class Personal_Loan_Pass extends AppCompatActivity {
                     Double pfee=0.0;
 
 
-                    if(amount12>10000){
+                  if (amount12>=15000){
                         pfee=599.0;
                     }
-                    else{
-                        pfee=499.0;
+                     if (amount12>=20001){
+                        pfee=699.0;
+                    }
+                    if (amount12>=25001){
+                        pfee=799.0;
+                    }
+                     if (amount12>=30001){
+                        pfee=899.0;
+                    }
+                    if(amount12<15000){
+                        pfee=599.0;
                     }
 
                     PF.setText(pfee.toString());
